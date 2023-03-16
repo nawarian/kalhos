@@ -1,5 +1,5 @@
 {
-  "name": "kolhos",
+  "name": "kalhos",
   "version": "1.0.0",
   "description": "A collective farm management game about the Brazilian socialist revolution.",
   "main": "src/game.ts",
