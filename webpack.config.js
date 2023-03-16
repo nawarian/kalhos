@@ -10,8 +10,15 @@ const htmlPluginCfg = new htmlPlugin({
 
 const copyPluginCfg = new copyPlugin({
   patterns: [
-    { from: 'assets/*.png', to: 'assets/[name].png' },
-    { from: 'maps/*.json', to: 'maps/[name].json' },
+    {
+      from: 'assets/kenney-pixel-platformer/Tilemap/*.png',
+      to: 'assets/platformer-[name].png',
+    },
+    {
+      from: 'assets/kenney-pixel-platformer-farm-extension/Tilemap/*.png',
+      to: 'assets/farm-[name].png',
+    },
+    { from: 'maps/*.tmj', to: 'maps/[name].json' },
   ],
 });
 

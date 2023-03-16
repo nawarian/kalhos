@@ -1,0 +1,47 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "level01.tmx",
+    "expandedProjectPaths": [
+    ],
+    "fileStates": {
+        "level01.tmx": {
+            "scale": 1.37,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 450.3649635036497,
+                "y": 135.40145985401458
+            }
+        },
+        "level01.tmx#farm": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "level01.tmx#platformer": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1
+        }
+    },
+    "last.exportedFilePath": "/Users/nickolasdasilva/nawarian/kalhos/maps",
+    "last.imagePath": "/Users/nickolasdasilva/nawarian/kalhos/assets/kenney-pixel-platformer-farm-extension/Tilemap",
+    "map.height": 15,
+    "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 18,
+    "map.tileWidth": 18,
+    "map.width": 50,
+    "openFiles": [
+        "level01.tmx"
+    ],
+    "project": "kalhos.tiled-project",
+    "recentFiles": [
+        "level01.tmx"
+    ],
+    "tileset.embedInMap": true,
+    "tileset.tileSize": {
+        "height": 18,
+        "width": 18
+    }
+}

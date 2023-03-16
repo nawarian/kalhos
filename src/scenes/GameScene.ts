@@ -1,3 +1,5 @@
+import { KEY_TILESET_PLATFORMER } from '../global';
+
 export class GameScene extends Phaser.Scene {
   constructor() {
     super({ key: 'GameScene' });
@@ -6,21 +8,7 @@ export class GameScene extends Phaser.Scene {
   init(): void {}
 
   create(): void {
-    const particles = this.add.particles('particle');
-
-    const phaser = this.physics.add.image(400, 100, 'phaser');
-    phaser.setScale(0.4, 0.4);
-    phaser.setVelocity(100, 200);
-    phaser.setBounce(1, 1);
-    phaser.setCollideWorldBounds(true);
-
-    const emitter = particles.createEmitter({
-      speed: 100,
-      scale: { start: 1, end: 0 },
-      blendMode: 'ADD',
-    });
-
-    emitter.startFollow(phaser);
+    this.add.image(0, 0, KEY_TILESET_PLATFORMER).setOrigin(0, 0);
   }
 
   preload(): void {}
