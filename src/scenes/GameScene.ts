@@ -46,6 +46,7 @@ export class GameScene extends Phaser.Scene {
       .setZoom(2)
       .startFollow(this.player)
       .setBounds(0, 0, map.widthInPixels, map.heightInPixels)
+      .setRoundPixels(true)
     ;
   }
 
