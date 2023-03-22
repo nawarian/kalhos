@@ -1,4 +1,9 @@
-import { KEY_CHARSET, KEY_TILED_LEVEL01, KEY_TILESET_FARM, KEY_TILESET_PLATFORMER } from '../global';
+import {
+  KEY_CHARSET,
+  KEY_TILED_LEVEL01,
+  KEY_TILESET_FARM,
+  KEY_TILESET_PLATFORMER,
+} from '../global';
 
 export class GameScene extends Phaser.Scene {
   player: Phaser.GameObjects.Sprite;
@@ -21,7 +26,10 @@ export class GameScene extends Phaser.Scene {
     const map = this.add.tilemap(KEY_TILED_LEVEL01);
     this.physics.world.setBounds(0, 0, map.widthInPixels, map.heightInPixels);
 
-    const platformerTs = map.addTilesetImage('platformer', KEY_TILESET_PLATFORMER);
+    const platformerTs = map.addTilesetImage(
+      'platformer',
+      KEY_TILESET_PLATFORMER,
+    );
     const farmTs = map.addTilesetImage('farm', KEY_TILESET_FARM);
 
     map.createLayer('level0', platformerTs);
@@ -32,12 +40,13 @@ export class GameScene extends Phaser.Scene {
 
     // Create player
     const { x, y } = map
-      .getObjectLayer('objects').objects
-      .find(({ name }) => name === 'player')
-    ;
+      .getObjectLayer('objects')
+      .objects.find(({ name }) => name === 'player');
     this.player = this.add.sprite(x, y, KEY_CHARSET, 0);
     this.physics.add.existing(this.player);
-    (this.player.body as Phaser.Physics.Arcade.Body).setCollideWorldBounds(true);
+    (this.player.body as Phaser.Physics.Arcade.Body).setCollideWorldBounds(
+      true,
+    );
 
     this.physics.add.collider(this.player, platform);
 
@@ -46,8 +55,7 @@ export class GameScene extends Phaser.Scene {
       .setZoom(2)
       .startFollow(this.player)
       .setBounds(0, 0, map.widthInPixels, map.heightInPixels)
-      .setRoundPixels(true)
-    ;
+      .setRoundPixels(true);
   }
 
   preload(): void {}
