@@ -8,9 +8,10 @@ export default class Coin extends Phaser.GameObjects.Sprite {
 
     this.setPosition(x - this.width / 2, y - this.height / 2).play(
       ANIM_COIN_SPIN,
+      true,
     );
 
-    this.getBody().setBounce(0.4, 0.5);
+    this.getBody().setBounce(0.4, 0.5).setSize(10, 10);
   }
 
   getBody(): Phaser.Physics.Arcade.Body {

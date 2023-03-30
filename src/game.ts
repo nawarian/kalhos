@@ -24,7 +24,7 @@ window.addEventListener('load', () => {
         gravity: {
           y: 1000,
         },
-        debug: true,
+        debug: false,
       },
     },
     backgroundColor: '#222',
