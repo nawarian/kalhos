@@ -4,11 +4,14 @@ import {
   KEY_TILESET_FARM,
   KEY_TILESET_PLATFORMER,
 } from '../global';
+import Coin from '../objects/Coin';
 import Player from '../objects/Player';
 
 export class GameScene extends Phaser.Scene {
   player: Player;
   keys: Map<string, Phaser.Input.Keyboard.Key>;
+
+  coins: Phaser.GameObjects.Group;
 
   constructor() {
     super({ key: 'GameScene' });
@@ -42,6 +45,18 @@ export class GameScene extends Phaser.Scene {
     map.createLayer('level2', farmTs).setDepth(DEPTH_LEVELS.floor);
     map.createLayer('level3', platformerTs).setDepth(DEPTH_LEVELS.trees);
 
+    // Add coins
+    this.coins = this.make.group({
+      classType: Coin,
+      runChildUpdate: true,
+    });
+    map.getObjectLayer('objects')
+      .objects
+      .filter(({ name }) => name === 'coin')
+      .forEach(({ x, y }) => this.coins.getFirstDead(true, x, y))
+    ;
+    this.physics.add.collider(this.coins, platform);
+
     // Create player
     const { x, y } = map
       .getObjectLayer('objects')
@@ -49,6 +64,8 @@ export class GameScene extends Phaser.Scene {
 
     this.player = new Player(this, x, y);
     this.physics.add.collider(this.player, platform);
+    this.physics.add.overlap(this.player, this.coins, (p, c) => (p as Player).onCollectCoin(c as Coin));
+
 
     // Manage camera
     this.cameras.main
