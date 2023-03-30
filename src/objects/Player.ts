@@ -35,11 +35,6 @@ export default class Player extends Phaser.GameObjects.Sprite {
     return this.body as Phaser.Physics.Arcade.Body;
   }
 
-  onCollectCoin(coin: Coin) {
-    this.coins++;
-    coin.destroy();
-  }
-
   preUpdate(time: number, delta: number): void {
     super.preUpdate(time, delta);
 
@@ -55,6 +50,20 @@ export default class Player extends Phaser.GameObjects.Sprite {
     } else {
       body.setVelocityX(0);
       this.play(ANIM_PLAYER_IDLE);
+    }
+  }
+
+  onCollectCoin(coin: Coin) {
+    if (coin.canBeCollected) {
+      this.coins++;
+      coin.destroy();
+    }
+  }
+
+  dropCoin(coins: Phaser.GameObjects.Group): void {
+    if (this.coins > 0) {
+      this.coins--;
+      coins.getFirstDead(true, this.x, this.y - 20);
     }
   }
 }

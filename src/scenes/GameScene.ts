@@ -70,5 +70,9 @@ export class GameScene extends Phaser.Scene {
 
   preload(): void {}
 
-  update(): void {}
+  update(): void {
+    if (Phaser.Input.Keyboard.JustUp(this.input.keyboard.addKey('DOWN'))) {
+      this.player.dropCoin(this.coins);
+    }
+  }
 }
