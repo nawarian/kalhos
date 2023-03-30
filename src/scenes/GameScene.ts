@@ -9,7 +9,6 @@ import Player from '../objects/Player';
 
 export class GameScene extends Phaser.Scene {
   player: Player;
-  keys: Map<string, Phaser.Input.Keyboard.Key>;
 
   coins: Phaser.GameObjects.Group;
 
@@ -17,13 +16,7 @@ export class GameScene extends Phaser.Scene {
     super({ key: 'GameScene' });
   }
 
-  init(): void {
-    this.keys = new Map([
-      ['LEFT', this.input.keyboard.addKey('LEFT')],
-      ['RIGHT', this.input.keyboard.addKey('RIGHT')],
-      ['ACTION', this.input.keyboard.addKey('DOWN')],
-    ]);
-  }
+  init(): void {}
 
   create(): void {
     // Set up tiled map
@@ -50,11 +43,10 @@ export class GameScene extends Phaser.Scene {
       classType: Coin,
       runChildUpdate: true,
     });
-    map.getObjectLayer('objects')
-      .objects
-      .filter(({ name }) => name === 'coin')
-      .forEach(({ x, y }) => this.coins.getFirstDead(true, x, y))
-    ;
+    map
+      .getObjectLayer('objects')
+      .objects.filter(({ name }) => name === 'coin')
+      .forEach(({ x, y }) => this.coins.getFirstDead(true, x, y));
     this.physics.add.collider(this.coins, platform);
 
     // Create player
@@ -64,8 +56,9 @@ export class GameScene extends Phaser.Scene {
 
     this.player = new Player(this, x, y);
     this.physics.add.collider(this.player, platform);
-    this.physics.add.overlap(this.player, this.coins, (p, c) => (p as Player).onCollectCoin(c as Coin));
-
+    this.physics.add.overlap(this.player, this.coins, (p, c) =>
+      (p as Player).onCollectCoin(c as Coin),
+    );
 
     // Manage camera
     this.cameras.main
@@ -77,15 +70,5 @@ export class GameScene extends Phaser.Scene {
 
   preload(): void {}
 
-  update(): void {
-    const body = this.player.getBody();
-
-    if (this.keys.get('LEFT').isDown) {
-      body.setVelocityX(-150);
-    } else if (this.keys.get('RIGHT').isDown) {
-      body.setVelocityX(150);
-    } else {
-      body.setVelocityX(0);
-    }
-  }
+  update(): void {}
 }

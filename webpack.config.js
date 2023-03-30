@@ -11,6 +11,10 @@ const htmlPluginCfg = new htmlPlugin({
 const copyPluginCfg = new copyPlugin({
   patterns: [
     {
+      from: 'assets/char_base/char_a_p1/**/*.png',
+      to: 'assets/charset-[name].png',
+    },
+    {
       from: 'assets/kenney-pixel-platformer/Tilemap/*.png',
       to: 'assets/platformer-[name].png',
     },
