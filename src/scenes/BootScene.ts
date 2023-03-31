@@ -65,7 +65,7 @@ export class BootScene extends Phaser.Scene {
       frames: this.anims.generateFrameNames(KEY_CHARSET, {
         frames: [56, 57, 58, 59, 60, 61],
       }),
-      repeat: 0,
+      repeat: -1,
       frameRate: 10,
     });
 
@@ -74,7 +74,7 @@ export class BootScene extends Phaser.Scene {
       frames: this.anims.generateFrameNames(KEY_CHARSET, {
         frames: [48, 49, 50, 51, 52, 53],
       }),
-      repeat: 0,
+      repeat: -1,
       frameRate: 10,
     });
   }

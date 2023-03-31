@@ -1,6 +1,7 @@
 import 'phaser';
 import { BootScene } from './scenes/BootScene';
 import { GameScene } from './scenes/GameScene';
+import MobileControlsScene from './scenes/MobileControlsScene';
 
 export class Game extends Phaser.Game {
   constructor(config: Phaser.Types.Core.GameConfig) {
@@ -10,11 +11,11 @@ export class Game extends Phaser.Game {
 
 window.addEventListener('load', () => {
   const cfg: Phaser.Types.Core.GameConfig = {
-    width: 812,
-    height: 375,
+    width: window.innerWidth,
+    height: window.innerHeight,
     type: Phaser.AUTO,
     parent: 'game',
-    scene: [BootScene, GameScene],
+    scene: [BootScene, GameScene, MobileControlsScene],
     input: {
       keyboard: true,
     },

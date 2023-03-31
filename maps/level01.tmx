@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="100" height="25" tilewidth="18" tileheight="18" infinite="0" nextlayerid="6" nextobjectid="16">
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="100" height="25" tilewidth="18" tileheight="18" infinite="0" nextlayerid="6" nextobjectid="100">
  <editorsettings>
   <export target="level01.tmj" format="json"/>
  </editorsettings>
@@ -303,5 +303,89 @@
   <object id="13" name="coin" class="coin" gid="264" x="789.666" y="122.333" width="18" height="18"/>
   <object id="14" name="coin" class="coin" gid="264" x="782.666" y="107.333" width="18" height="18"/>
   <object id="15" name="coin" class="coin" gid="264" x="972" y="306" width="18" height="18"/>
+  <object id="16" name="coin" class="coin" gid="264" x="36" y="111" width="18" height="18"/>
+  <object id="17" name="coin" class="coin" gid="264" x="49.667" y="108" width="18" height="18"/>
+  <object id="18" name="coin" class="coin" gid="264" x="47" y="116" width="18" height="18"/>
+  <object id="19" name="coin" class="coin" gid="264" x="40" y="101" width="18" height="18"/>
+  <object id="20" name="coin" class="coin" gid="264" x="49.667" y="100" width="18" height="18"/>
+  <object id="21" name="coin" class="coin" gid="264" x="63.334" y="97" width="18" height="18"/>
+  <object id="22" name="coin" class="coin" gid="264" x="60.667" y="105" width="18" height="18"/>
+  <object id="23" name="coin" class="coin" gid="264" x="53.667" y="90" width="18" height="18"/>
+  <object id="24" name="coin" class="coin" gid="264" x="58.666" y="117.333" width="18" height="18"/>
+  <object id="25" name="coin" class="coin" gid="264" x="72.333" y="114.333" width="18" height="18"/>
+  <object id="26" name="coin" class="coin" gid="264" x="69.666" y="122.333" width="18" height="18"/>
+  <object id="27" name="coin" class="coin" gid="264" x="62.666" y="107.333" width="18" height="18"/>
+  <object id="28" name="coin" class="coin" gid="264" x="234" y="93" width="18" height="18"/>
+  <object id="29" name="coin" class="coin" gid="264" x="247.667" y="90" width="18" height="18"/>
+  <object id="30" name="coin" class="coin" gid="264" x="245" y="98" width="18" height="18"/>
+  <object id="31" name="coin" class="coin" gid="264" x="238" y="83" width="18" height="18"/>
+  <object id="32" name="coin" class="coin" gid="264" x="247.667" y="82" width="18" height="18"/>
+  <object id="33" name="coin" class="coin" gid="264" x="261.334" y="79" width="18" height="18"/>
+  <object id="34" name="coin" class="coin" gid="264" x="258.667" y="87" width="18" height="18"/>
+  <object id="35" name="coin" class="coin" gid="264" x="251.667" y="72" width="18" height="18"/>
+  <object id="36" name="coin" class="coin" gid="264" x="256.666" y="99.333" width="18" height="18"/>
+  <object id="37" name="coin" class="coin" gid="264" x="270.333" y="96.333" width="18" height="18"/>
+  <object id="38" name="coin" class="coin" gid="264" x="267.666" y="104.333" width="18" height="18"/>
+  <object id="39" name="coin" class="coin" gid="264" x="260.666" y="89.333" width="18" height="18"/>
+  <object id="40" name="coin" class="coin" gid="264" x="522" y="93" width="18" height="18"/>
+  <object id="41" name="coin" class="coin" gid="264" x="535.667" y="90" width="18" height="18"/>
+  <object id="42" name="coin" class="coin" gid="264" x="533" y="98" width="18" height="18"/>
+  <object id="43" name="coin" class="coin" gid="264" x="526" y="83" width="18" height="18"/>
+  <object id="44" name="coin" class="coin" gid="264" x="535.667" y="82" width="18" height="18"/>
+  <object id="45" name="coin" class="coin" gid="264" x="549.334" y="79" width="18" height="18"/>
+  <object id="46" name="coin" class="coin" gid="264" x="546.667" y="87" width="18" height="18"/>
+  <object id="47" name="coin" class="coin" gid="264" x="539.667" y="72" width="18" height="18"/>
+  <object id="48" name="coin" class="coin" gid="264" x="544.666" y="99.333" width="18" height="18"/>
+  <object id="49" name="coin" class="coin" gid="264" x="558.333" y="96.333" width="18" height="18"/>
+  <object id="50" name="coin" class="coin" gid="264" x="555.666" y="104.333" width="18" height="18"/>
+  <object id="51" name="coin" class="coin" gid="264" x="548.666" y="89.333" width="18" height="18"/>
+  <object id="52" name="coin" class="coin" gid="264" x="1188" y="57" width="18" height="18"/>
+  <object id="53" name="coin" class="coin" gid="264" x="1201.67" y="54" width="18" height="18"/>
+  <object id="54" name="coin" class="coin" gid="264" x="1199" y="62" width="18" height="18"/>
+  <object id="55" name="coin" class="coin" gid="264" x="1192" y="47" width="18" height="18"/>
+  <object id="56" name="coin" class="coin" gid="264" x="1201.67" y="46" width="18" height="18"/>
+  <object id="57" name="coin" class="coin" gid="264" x="1215.33" y="43" width="18" height="18"/>
+  <object id="58" name="coin" class="coin" gid="264" x="1212.67" y="51" width="18" height="18"/>
+  <object id="59" name="coin" class="coin" gid="264" x="1205.67" y="36" width="18" height="18"/>
+  <object id="60" name="coin" class="coin" gid="264" x="1210.67" y="63.333" width="18" height="18"/>
+  <object id="61" name="coin" class="coin" gid="264" x="1224.33" y="60.333" width="18" height="18"/>
+  <object id="62" name="coin" class="coin" gid="264" x="1221.67" y="68.333" width="18" height="18"/>
+  <object id="63" name="coin" class="coin" gid="264" x="1214.67" y="53.333" width="18" height="18"/>
+  <object id="64" name="coin" class="coin" gid="264" x="1458" y="57" width="18" height="18"/>
+  <object id="65" name="coin" class="coin" gid="264" x="1471.67" y="54" width="18" height="18"/>
+  <object id="66" name="coin" class="coin" gid="264" x="1469" y="62" width="18" height="18"/>
+  <object id="67" name="coin" class="coin" gid="264" x="1462" y="47" width="18" height="18"/>
+  <object id="68" name="coin" class="coin" gid="264" x="1471.67" y="46" width="18" height="18"/>
+  <object id="69" name="coin" class="coin" gid="264" x="1485.33" y="43" width="18" height="18"/>
+  <object id="70" name="coin" class="coin" gid="264" x="1482.67" y="51" width="18" height="18"/>
+  <object id="71" name="coin" class="coin" gid="264" x="1475.67" y="36" width="18" height="18"/>
+  <object id="72" name="coin" class="coin" gid="264" x="1480.67" y="63.333" width="18" height="18"/>
+  <object id="73" name="coin" class="coin" gid="264" x="1494.33" y="60.333" width="18" height="18"/>
+  <object id="74" name="coin" class="coin" gid="264" x="1491.67" y="68.333" width="18" height="18"/>
+  <object id="75" name="coin" class="coin" gid="264" x="1484.67" y="53.333" width="18" height="18"/>
+  <object id="76" name="coin" class="coin" gid="264" x="1638" y="75" width="18" height="18"/>
+  <object id="77" name="coin" class="coin" gid="264" x="1651.67" y="72" width="18" height="18"/>
+  <object id="78" name="coin" class="coin" gid="264" x="1649" y="80" width="18" height="18"/>
+  <object id="79" name="coin" class="coin" gid="264" x="1642" y="65" width="18" height="18"/>
+  <object id="80" name="coin" class="coin" gid="264" x="1651.67" y="64" width="18" height="18"/>
+  <object id="81" name="coin" class="coin" gid="264" x="1665.33" y="61" width="18" height="18"/>
+  <object id="82" name="coin" class="coin" gid="264" x="1662.67" y="69" width="18" height="18"/>
+  <object id="83" name="coin" class="coin" gid="264" x="1655.67" y="54" width="18" height="18"/>
+  <object id="84" name="coin" class="coin" gid="264" x="1660.67" y="81.333" width="18" height="18"/>
+  <object id="85" name="coin" class="coin" gid="264" x="1674.33" y="78.333" width="18" height="18"/>
+  <object id="86" name="coin" class="coin" gid="264" x="1671.67" y="86.333" width="18" height="18"/>
+  <object id="87" name="coin" class="coin" gid="264" x="1664.67" y="71.333" width="18" height="18"/>
+  <object id="88" name="coin" class="coin" gid="264" x="972" y="111" width="18" height="18"/>
+  <object id="89" name="coin" class="coin" gid="264" x="985.667" y="108" width="18" height="18"/>
+  <object id="90" name="coin" class="coin" gid="264" x="983" y="116" width="18" height="18"/>
+  <object id="91" name="coin" class="coin" gid="264" x="976" y="101" width="18" height="18"/>
+  <object id="92" name="coin" class="coin" gid="264" x="985.667" y="100" width="18" height="18"/>
+  <object id="93" name="coin" class="coin" gid="264" x="999.334" y="97" width="18" height="18"/>
+  <object id="94" name="coin" class="coin" gid="264" x="996.667" y="105" width="18" height="18"/>
+  <object id="95" name="coin" class="coin" gid="264" x="989.667" y="90" width="18" height="18"/>
+  <object id="96" name="coin" class="coin" gid="264" x="994.666" y="117.333" width="18" height="18"/>
+  <object id="97" name="coin" class="coin" gid="264" x="1008.33" y="114.333" width="18" height="18"/>
+  <object id="98" name="coin" class="coin" gid="264" x="1005.67" y="122.333" width="18" height="18"/>
+  <object id="99" name="coin" class="coin" gid="264" x="998.666" y="107.333" width="18" height="18"/>
  </objectgroup>
 </map>
